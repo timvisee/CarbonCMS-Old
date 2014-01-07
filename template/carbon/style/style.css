@@ -1,0 +1,40 @@
+/* Unwanted default margin and padding fix */
+* {
+    margin: 0;
+    padding: 0;
+}
+
+/* IE unwanted border fix */
+a,
+img {
+    border: none;
+}
+
+body {
+    background: #DDD;
+    color: #000;
+    font-family: Arial, Helvetica, Sans-serif;
+    font-size: 14px;
+}
+
+#menubar {
+    background: gold;
+    width: auto;
+    margin: 15px 15px 0 15px;
+    padding: 10px;
+}
+
+#page {
+    background: white;
+    width: auto;
+    min-height: 60px;
+    margin: 0 15px;
+    padding: 10px;
+}
+
+#footer {
+    background: green;
+    width: auto;
+    margin: 0 15px 15px 15px;
+    padding: 10px;
+}

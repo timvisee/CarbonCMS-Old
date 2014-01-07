@@ -1,0 +1,73 @@
+<?php
+
+/**
+ * LanguageManifest.php
+ *
+ * LanguageManifest class.
+ *
+ * @author Tim Vise
+ * @website http://timvisee.com/
+ * @copyright Copyright (C) Tim Visee 2012, All rights reserved.
+ */
+
+namespace core\language;
+
+use core\exception\language\manifest\CarbonLanguageManifestLoadException;
+
+// Prevent users from accessing this file directly
+defined('CARBON_ROOT') or die('Access denied!');
+
+/**
+ * LanguageManifest class.
+ *
+ * @package core\langauge
+ * @author Tim Visee
+ */
+class LanguageManifest {
+
+    private $manifest;
+
+    /**
+     * Load a language manifest from a manifest file
+     * @param string $file File to load the language manifest from.
+     * @param bool $throw_exception True to throw an exception if anything went wrong.
+     * @throws CarbonLanguageManifestLoadException Throws exception if failed to load the language manifest and
+     * when $throw_exception equals to true
+     * @return LanguageManifest LanguageManifest instance, or null if something went wrong
+     */
+    public static function loadManifest($file, $throw_exception = true) {
+        // Make sure this file exists
+        if(!file_exists($file)) {
+            if($throw_exception)
+                throw new CarbonLanguageManifestLoadException(
+                    "Unable to load language manifest, file doesn't exist: '" . $file . "'",
+                    0,
+                    null,
+                    "Make sure language is correctly installed",
+                    $file
+                );
+            return null;
+        }
+
+        // Get the file contents
+        $manifest = file($file);
+    }
+
+    /**
+     * Check whether the manifest is loaded or not
+     * @return bool True if the manifest is loaded
+     */
+    private function isLoaded() {
+        // TODO: Check whether the manifest was loaded or not, return the result
+        return true;
+    }
+
+    /**
+     * Check whether the manifest file is valid or not, the manifest must be loaded.
+     * @return bool True if the manifest was valid, false otherwise. Returns false if the manifest isn't loaded.
+     */
+    private function isValid() {
+        // TODO: Check whether the manifest file is valid, return the result
+        return $this->isLoaded();
+    }
+}

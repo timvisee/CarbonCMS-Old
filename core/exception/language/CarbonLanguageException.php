@@ -1,0 +1,23 @@
+<?php
+
+/**
+ * CarbonLanguageException.php
+ *
+ * @author Tim Visee
+ * @website http://timvisee.com/
+ * @copyright Copyright © Tim Visee 2012-2013, All rights reserved.
+ */
+
+namespace core\exception\language;
+
+use core\exception\CarbonCoreException;
+
+// Prevent users from accessing this file directly
+defined('CARBON_ROOT') or die('Access denied!');
+
+/**
+ * CarbonLanguageException class
+ * @package core\exception
+ * @author Tim Visee
+ */
+class CarbonLanguageException extends CarbonCoreException { }
