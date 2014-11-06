@@ -12,10 +12,10 @@
 namespace controller;
 
 use controller\Controller;
-use core\Database;
-use core\Page as PageClass;
+use carbon\core\Database;
+use carbon\core\Page as PageClass;
 
-// Prevent users from accessing this file directly
+// Prevent direct requests to this file due to security reasons
 defined('CARBON_ROOT') or die('Access denied!');
 
 /**

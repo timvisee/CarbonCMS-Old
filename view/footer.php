@@ -2,13 +2,13 @@
 
 /**
  * footer.php
- * Main footer file for views for Carbon CMS.
+ * Main footer set_file for views for Carbon CMS.
  * @author Tim Visée
  * @website http://timvisee.com/
  * @copyright Copyright © Tim Visée 2012, All rights reserved.
  */
 
-// Prevent users from accessing this file directly
+// Prevent direct requests to this set_file due to security reasons
 defined('CARBON_ROOT') or die('Access denied!');
 
 ?>

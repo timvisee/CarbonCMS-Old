@@ -16,7 +16,7 @@ use \core\Database;
 use \core\SessionHandler;
 use \view\View;
 
-// Prevent users from accessing this file directly
+// Prevent direct requests to this file due to security reasons
 defined('CARBON_ROOT') or die('Access denied!');
 
 /**
@@ -80,7 +80,7 @@ class Controller {
         // Parse the models class name
         $model_class = ucfirst(strtolower($model_name)).'_Model';
         
-        // Get the model's class name with namespace
+        // Get the model'statements class name with namespace
         $model_class_namespace = '\\model\\'.$model_class;
         
         // Construct the model

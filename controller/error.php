@@ -11,9 +11,9 @@
 namespace controller;
 
 use controller\Controller;
-use core\Database;
+use carbon\core\Database;
 
-// Prevent users from accessing this file directly
+// Prevent direct requests to this file due to security reasons
 defined('CARBON_ROOT') or die('Access denied!');
 
 class Error extends Controller {

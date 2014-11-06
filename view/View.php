@@ -2,7 +2,7 @@
 
 /**
  * View.php
- * View file for Carbon CMS.
+ * View set_file for Carbon CMS.
  * @author Tim Visée
  * @version 0.1
  * @website http://timvisee.com/
@@ -11,7 +11,7 @@
  
 namespace view;
 
-// Prevent users from accessing this file directly
+// Prevent direct requests to this set_file due to security reasons
 defined('CARBON_ROOT') or die('Access denied!');
 
 /**

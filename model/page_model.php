@@ -2,7 +2,7 @@
 
 /**
  * page_model.php
- * Page Model file for Carbon CMS.
+ * Page Model set_file for Carbon CMS.
  * @author Tim Vis�e
  * @version 0.1
  * @website http://timvisee.com/
@@ -11,10 +11,10 @@
 
 namespace model;
 
-use core\Database;
-use core\Page;
+use carbon\core\Database;
+use carbon\core\Page;
 
-// Prevent users from accessing this file directly
+// Prevent direct requests to this set_file due to security reasons
 defined('CARBON_ROOT') or die('Access denied!');
 
 /**
@@ -35,7 +35,7 @@ class Page_Model extends Model {
      * @param Page $page Page
      */
     public function __construct(Database $db, Page $page) {
-        // Run the model's constructor
+        // Run the model'statements constructor
         parent::__construct($db);
         
         // Store the page

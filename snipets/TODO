@@ -1,0 +1,22 @@
+TODO: Make the core really standalone
+
+TODO: Convert plugins to modules!
+
+TODO: Never use foreach loops, due to performance issues!
+
+TODO: Build a validator (to validate form field content) that can be extended, such as:
+        Validator.setMinLength();
+        Validator.setMaxLength();
+        new Validator(Validator.EMAIL);
+
+TODO: Implement the required magic method in each class, such as __toString() or __isset()!
+
+TODO: Dir vs Directory, and similar method namings!
+
+TODO: Never use short tags!
+
+TODO: Use $arr[] instead of array_push to increase performance!
+
+TODO: Replace all array_merge usages for appending and array of items to an array, increase performance!
+
+TODO: All 'Array' objects to 'array'.
